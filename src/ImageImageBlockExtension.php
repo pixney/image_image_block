@@ -2,10 +2,10 @@
 
 namespace Pixney\ImageImageBlockExtension;
 
+use Anomaly\BlocksModule\Block\BlockExtension;
 use Pixney\ImageImageBlockExtension\Block\BlockModel;
-use Anomaly\Streams\Platform\Addon\Extension\Extension;
 
-class ImageImageBlockExtension extends Extension
+class ImageImageBlockExtension extends BlockExtension
 {
     protected $provides = 'anomaly.module.blocks::block.image_image';
     protected $model    = BlockModel::class;

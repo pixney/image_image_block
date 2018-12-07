@@ -1,2 +1,5 @@
-#Installation 
- php artisan addon:install pixney.extension.image_image_block
+# Installation
+ ```php
+ php artisan addon:installpixney.extension.image_image_block
+ ```
+ 

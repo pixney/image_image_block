@@ -1,6 +1,10 @@
 <?php namespace Pixney\ImageImageBlockExtension;
 
 use Anomaly\Streams\Platform\Addon\AddonServiceProvider;
+use Pixney\ImageImageBlockExtension\Block\Contract\BlockRepositoryInterface;
+use Pixney\ImageImageBlockExtension\Block\BlockRepository;
+use Anomaly\Streams\Platform\Model\ImageImageBlock\ImageImageBlockBlocksEntryModel;
+use Pixney\ImageImageBlockExtension\Block\BlockModel;
 use Illuminate\Routing\Router;
 
 class ImageImageBlockExtensionServiceProvider extends AddonServiceProvider
@@ -93,14 +97,18 @@ class ImageImageBlockExtensionServiceProvider extends AddonServiceProvider
      *
      * @type array|null
      */
-    protected $bindings = [];
+    protected $bindings = [
+        ImageImageBlockBlocksEntryModel::class => BlockModel::class,
+    ];
 
     /**
      * The addon singleton bindings.
      *
      * @type array|null
      */
-    protected $singletons = [];
+    protected $singletons = [
+        BlockRepositoryInterface::class => BlockRepository::class,
+    ];
 
     /**
      * Additional service providers.
