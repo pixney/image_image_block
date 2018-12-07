@@ -4,21 +4,13 @@ use Anomaly\Streams\Platform\Database\Migration\Migration;
 
 class PixneyExtensionImageImageBlockCreateImageImageBlockFields extends Migration
 {
-
     /**
      * The addon fields.
      *
      * @var array
      */
     protected $fields = [
-        'name' => 'anomaly.field_type.text',
-        'slug' => [
-            'type' => 'anomaly.field_type.slug',
-            'config' => [
-                'slugify' => 'name',
-                'type' => '_'
-            ],
-        ],
+        'image_alpha' => 'anomaly.field_type.image',
+        'image_beta'  => 'anomaly.field_type.image',
     ];
-
 }
