@@ -1,15 +1,16 @@
-<?php namespace Pixney\ImageImageBlockExtension;
+<?php
 
-use Anomaly\Streams\Platform\Addon\AddonServiceProvider;
-use Pixney\ImageImageBlockExtension\Block\Contract\BlockRepositoryInterface;
-use Pixney\ImageImageBlockExtension\Block\BlockRepository;
-use Anomaly\Streams\Platform\Model\ImageImageBlock\ImageImageBlockBlocksEntryModel;
-use Pixney\ImageImageBlockExtension\Block\BlockModel;
+namespace Pixney\ImageImageBlockExtension;
+
 use Illuminate\Routing\Router;
+use Pixney\ImageImageBlockExtension\Block\BlockModel;
+use Anomaly\Streams\Platform\Addon\AddonServiceProvider;
+use Pixney\ImageImageBlockExtension\Block\BlockRepository;
+use Pixney\ImageImageBlockExtension\Block\Contract\BlockRepositoryInterface;
+use Anomaly\Streams\Platform\Model\ImageImageBlock\ImageImageBlockBlocksEntryModel;
 
 class ImageImageBlockExtensionServiceProvider extends AddonServiceProvider
 {
-
     /**
      * Additional addon plugins.
      *
@@ -167,5 +168,4 @@ class ImageImageBlockExtensionServiceProvider extends AddonServiceProvider
         // Register dynamic routes here for example.
         // Use method injection or commands to bring in services.
     }
-
 }

@@ -1,10 +1,11 @@
-<?php namespace Pixney\ImageImageBlockExtension\Block\Form;
+<?php
+
+namespace Pixney\ImageImageBlockExtension\Block\Form;
 
 use Anomaly\Streams\Platform\Ui\Form\FormBuilder;
 
 class BlockFormBuilder extends FormBuilder
 {
-
     /**
      * The form fields.
      *
@@ -62,5 +63,4 @@ class BlockFormBuilder extends FormBuilder
      * @var array
      */
     protected $assets = [];
-
 }
