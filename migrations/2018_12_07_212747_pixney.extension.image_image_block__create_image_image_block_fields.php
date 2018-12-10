@@ -10,7 +10,21 @@ class PixneyExtensionImageImageBlockCreateImageImageBlockFields extends Migratio
      * @var array
      */
     protected $fields = [
-        'image_alpha' => 'anomaly.field_type.image',
-        'image_beta'  => 'anomaly.field_type.image',
+        'image_alpha' => [
+            'type'   => 'anomaly.field_type.image',
+            'config' => [
+                'folders'      => null,
+                'aspect_ratio' => '2:3',
+                'min_height'   => 400
+            ]
+        ],
+        'image_beta' => [
+            'type'   => 'anomaly.field_type.image',
+            'config' => [
+                'folders'      => null,
+                'aspect_ratio' => '2:3',
+                'min_height'   => 400
+            ]
+        ]
     ];
 }
