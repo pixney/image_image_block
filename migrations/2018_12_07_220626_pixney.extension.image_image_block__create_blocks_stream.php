@@ -20,8 +20,8 @@ class PixneyExtensionImageImageBlockCreateBlocksStream extends Migration
      * @var array
      */
     protected $assignments = [
+        'classes',
         'image_alpha',
-        'image_beta',
-        'classes'
+        'image_beta'
     ];
 }
