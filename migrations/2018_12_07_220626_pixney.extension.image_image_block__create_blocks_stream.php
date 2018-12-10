@@ -10,7 +10,8 @@ class PixneyExtensionImageImageBlockCreateBlocksStream extends Migration
      * @var array
      */
     protected $stream = [
-        'slug' => 'blocks'
+        'slug'        => 'blocks',
+        'translatable'=> true
     ];
 
     /**
@@ -21,5 +22,6 @@ class PixneyExtensionImageImageBlockCreateBlocksStream extends Migration
     protected $assignments = [
         'image_alpha',
         'image_beta',
+        'classes'
     ];
 }
