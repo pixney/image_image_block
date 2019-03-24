@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title'       => 'Image Image Block',
+    'title'       => 'Images',
     'name'        => 'Image Image Block Extension',
-    'description' => ''
+    'description' => 'Two Images'
 ];

@@ -10,6 +10,7 @@ class ImageImageBlockExtension extends BlockExtension
 {
     protected $provides = 'anomaly.module.blocks::block.image_image';
     protected $model    = BlockModel::class;
+    protected $category = 'content';
 
     public function getView()
     {
