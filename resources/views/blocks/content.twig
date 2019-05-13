@@ -1,0 +1,31 @@
+<div class="m-imageImage">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-xxl-10 mx-auto">
+                <div class="row">
+                    <div class="col-6">
+                        <picture>
+                            <source srcset="{{ block.image_alpha.cropped().widen(540).url }}" media="(min-width: 1200px)">
+                            <source srcset="{{ block.image_alpha.cropped().widen(450).url }}" media="(min-width: 1024px)">
+                            <source srcset="{{ block.image_alpha.cropped().widen(330).url }}" media="(min-width: 768px)">
+                            <source srcset="{{ block.image_alpha.cropped().widen(240).url }}" media="(min-width: 300px)">
+                            <img class="m-imageImage__alpha" src="{{ block.image_alpha.cropped().url }}" alt="">
+                        </picture>
+
+                    </div>
+                    <div class="col-6">
+                        <picture>
+                            <source srcset="{{ block.image_beta.cropped().widen(540).url }}" media="(min-width: 1200px)">
+                            <source srcset="{{ block.image_beta.cropped().widen(450).url }}" media="(min-width: 1024px)">
+                            <source srcset="{{ block.image_beta.cropped().widen(330).url }}" media="(min-width: 768px)">
+                            <source srcset="{{ block.image_beta.cropped().widen(240).url }}" media="(min-width: 300px)">
+                            <img class="m-imageImage__alpha" src="{{ block.image_beta.cropped().url }}" alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
